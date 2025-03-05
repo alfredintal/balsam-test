@@ -28,12 +28,12 @@ test('Automate Balsam Hill Shopping Flow', async ({ page }) => {
     const cartPrice = await cartPage.getCartPrice();
 
     // Validations
-    expect(searchPrice).toContain(productPrice);
-    expect(productPrice).toContain(cartPrice);
+    await expect(searchPrice).toContain(productPrice);
+    await expect(productPrice).toContain(cartPrice);
     expect(await cartPage.verifyCartItemCount('1')).toBeTruthy();
 
     // Remove item and validate removal message
     await cartPage.removeItemFromCart();
     const removalMessage = await cartPage.verifyItemRemoved();
-    expect(removalMessage).toContain('has been removed');
+    await expect(removalMessage).toContain('has been removed');
 });
