@@ -1,0 +1,129 @@
+{
+  "config": {
+    "configFile": "D:\\Users\\Alfred\\Documents\\Projects\\balsam-test\\playwright.config.ts",
+    "rootDir": "D:/Users/Alfred/Documents/Projects/balsam-test",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Users/Alfred/Documents/Projects/balsam-test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "D:/Users/Alfred/Documents/Projects/balsam-test",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.50.1",
+    "workers": 16,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\purchaseFlow.test.ts",
+      "file": "tests/purchaseFlow.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Automate Balsam Hill Shopping Flow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 16483,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Third Product Price: $899\n"
+                    },
+                    {
+                      "text": "Product Page Price: $899\n"
+                    },
+                    {
+                      "text": "Cart Product Price: $899\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-05T17:58:40.731Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Users\\Alfred\\Documents\\Projects\\balsam-test\\test-results\\tests-purchaseFlow-Automate-Balsam-Hill-Shopping-Flow\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Users\\Alfred\\Documents\\Projects\\balsam-test\\test-results\\tests-purchaseFlow-Automate-Balsam-Hill-Shopping-Flow\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "12696e7c38c783e7e798-a4dcc56eb18f656a551f",
+          "file": "tests/purchaseFlow.test.ts",
+          "line": 7,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-03-05T17:58:40.184Z",
+    "duration": 18265.083,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
