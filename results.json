@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 3
     },
     "preserveOutput": "always",
     "reporter": [
@@ -37,8 +37,36 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
-        "id": "",
-        "name": "",
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/Users/Alfred/Documents/Projects/balsam-test",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Users/Alfred/Documents/Projects/balsam-test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Users/Alfred/Documents/Projects/balsam-test",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Users/Alfred/Documents/Projects/balsam-test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
         "testDir": "D:/Users/Alfred/Documents/Projects/balsam-test",
         "testIgnore": [],
         "testMatch": [
@@ -70,13 +98,13 @@
               "timeout": 60000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
+              "projectId": "chromium",
+              "projectName": "chromium",
               "results": [
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 21799,
+                  "duration": 20092,
                   "errors": [],
                   "stdout": [
                     {
@@ -91,17 +119,101 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-03-05T18:19:56.074Z",
+                  "startTime": "2025-03-05T18:37:10.449Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\Users\\Alfred\\Documents\\Projects\\balsam-test\\test-results\\tests-purchaseFlow-Automate-Balsam-Hill-Shopping-Flow\\test-finished-1.png"
+                      "path": "D:\\Users\\Alfred\\Documents\\Projects\\balsam-test\\test-results\\tests-purchaseFlow-Automate-Balsam-Hill-Shopping-Flow-chromium\\test-finished-1.png"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "D:\\Users\\Alfred\\Documents\\Projects\\balsam-test\\test-results\\tests-purchaseFlow-Automate-Balsam-Hill-Shopping-Flow\\trace.zip"
+                      "path": "D:\\Users\\Alfred\\Documents\\Projects\\balsam-test\\test-results\\tests-purchaseFlow-Automate-Balsam-Hill-Shopping-Flow-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 18760,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Third Product Price: $839\n"
+                    },
+                    {
+                      "text": "Product Page Price: $839\n"
+                    },
+                    {
+                      "text": "Cart Product Price: $839\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-05T18:37:10.448Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Users\\Alfred\\Documents\\Projects\\balsam-test\\test-results\\tests-purchaseFlow-Automate-Balsam-Hill-Shopping-Flow-firefox\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Users\\Alfred\\Documents\\Projects\\balsam-test\\test-results\\tests-purchaseFlow-Automate-Balsam-Hill-Shopping-Flow-firefox\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 25990,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Third Product Price: $489\n"
+                    },
+                    {
+                      "text": "Product Page Price: $489\n"
+                    },
+                    {
+                      "text": "Cart Product Price: $489\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-05T18:37:10.449Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Users\\Alfred\\Documents\\Projects\\balsam-test\\test-results\\tests-purchaseFlow-Automate-Balsam-Hill-Shopping-Flow-webkit\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Users\\Alfred\\Documents\\Projects\\balsam-test\\test-results\\tests-purchaseFlow-Automate-Balsam-Hill-Shopping-Flow-webkit\\trace.zip"
                     }
                   ]
                 }
@@ -109,7 +221,7 @@
               "status": "expected"
             }
           ],
-          "id": "12696e7c38c783e7e798-a4dcc56eb18f656a551f",
+          "id": "12696e7c38c783e7e798-176145b22935e9d345ce",
           "file": "tests/purchaseFlow.test.ts",
           "line": 7,
           "column": 5
@@ -119,9 +231,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-03-05T18:19:55.575Z",
-    "duration": 23307.511,
-    "expected": 1,
+    "startTime": "2025-03-05T18:37:09.918Z",
+    "duration": 28244.93,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

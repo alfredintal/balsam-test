@@ -10,4 +10,14 @@ export default defineConfig({
     },
     reporter: [['list'], ['json', { outputFile: 'results.json' }]],
     timeout: 60000,
+
+    projects: [
+
+        { name: 'chromium', use: { browserName: 'chromium' } },
+
+        { name: 'firefox', use: { browserName: 'firefox' } },
+
+        { name: 'webkit', use: { browserName: 'webkit' } }
+
+    ]
 });
