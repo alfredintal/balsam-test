@@ -50,8 +50,11 @@ npx playwright test tests/purchaseFlow.test.ts
 ```
 
 ### ✅ **Run Tests in Headless Mode**
+
+Update playwright.config.ts:
+
 ```sh
-npx playwright test --headed=false
+headless: true
 ```
 
 ### ✅ **Run Tests in a Specific Browser**
