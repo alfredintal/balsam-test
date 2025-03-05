@@ -18,17 +18,14 @@ test('Automate Balsam Hill Shopping Flow', async ({ page }) => {
 
     // Select third product from search results
     const searchPrice = await searchResultsPage.selectThirdResult();
-    console.log(`Third Product Price: ${searchPrice}`);
     // Select customization (if available) and add to cart
     const productPrice = await productPage.getProductPrice();
-    console.log(`Product Page Price: ${productPrice}`);
     // await productPage.selectCustomOptions();
     await productPage.addToCart();
 
     // View cart
     await cartPage.viewCart();
     const cartPrice = await cartPage.getCartPrice();
-    console.log(`Cart Product Price: ${cartPrice}`);
 
     // Validations
     expect(searchPrice).toContain(productPrice);
